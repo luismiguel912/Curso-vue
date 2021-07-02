@@ -1,6 +1,6 @@
 <template>
   <div>
-  <Car/>
+  <Car :poder="poder"/>
     <hr>
   <CarData/>
   </div>
@@ -13,6 +13,11 @@ export default {
   components: {
     Car,
     CarData,
+  },
+  data() {
+      return {
+          poder: 20,
+      };
   },
 }
 </script>
